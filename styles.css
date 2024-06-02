@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0rem 9rem;
+  position: fixed;
+  width: 100vw;
+  box-shadow: 0px 5px 5px rgb(186, 220, 239);
+  display: flex;
+  align-items: center;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  font-weight: 500;
+  font-size: large;
+}
+
+.link {
+  cursor: pointer;
+  padding: 1.5rem 0rem;
+}
+
+.course,
+.bootcamp {
+  position: relative;
+}
+
+.course_ul {
+  position: absolute;
+  list-style-type: none;
+  display: none;
+  padding: 1rem 1rem;
+  left: -100%;
+  width: max-content;
+  background-color: white;
+  font-weight: 400;
+  box-shadow: 0px 0px 3px rgba(152, 152, 152, 0.503);
+}
+
+.course_ul li,
+.bootcamp_ul li {
+  margin-bottom: 0.7rem;
+  cursor: pointer;
+}
+
+.course_ul li:last-child,
+.bootcamp_ul li:last-child {
+  margin-bottom: 0px;
+}
+
+.bootcamp_ul {
+  width: max-content;
+  position: absolute;
+  list-style-type: none;
+  padding: 1rem 1rem;
+  left: -115%;
+  display: none;
+  background-color: white;
+  font-weight: 400;
+  box-shadow: 0px 0px 3px rgba(152, 152, 152, 0.503);
+}
+
+.bars {
+  display: none;
+}
+
+.xmark {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  header {
+    padding: 1.5rem 3rem;
+  }
+
+  .links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 87px;
+    align-items: flex-start;
+    gap: 0px;
+    width: 50vw;
+    right: 0;
+  }
+
+  .course_ul,
+  .bootcamp_ul {
+    position: static;
+  }
+
+  .xmark {
+    display: block;
+    position: absolute;
+    top: -60px;
+    right: 50px;
+  }
+
+  .bars {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .links {
+    width: 100vw;
+    align-items: center;
+  }
+}
