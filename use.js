@@ -36,6 +36,13 @@ xmarkEl.addEventListener("click", () => {
   barsEl.style.display = "block";
 });
 
+document.querySelector(".branch").addEventListener("change", () => {
+  document.querySelector(".other_input").style.display =
+    document.querySelector("#branch_selector").value === "Other"
+      ? "flex"
+      : "none";
+});
+
 // Function to get the current aspect ratio
 function getAspectRatio() {
   return window.innerWidth / window.innerHeight;
