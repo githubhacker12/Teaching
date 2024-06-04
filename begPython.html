@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/cddd77ce06.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./begPythonStyle.css" />
+  </head>
+  <body>
+    <header>
+      <p class="logo">
+        LETS <br />
+        DEVELOP
+      </p>
+      <div class="links">
+        <i class="xmark fa-solid fa-xmark"></i>
+        <!-- <p class="link home_link">Home</p> -->
+        <p class="link home_link"><a href="./index.html">Home</a></p>
+
+        <div class="course">
+          <p class="link course_link">
+            Course <i class="bi bi-caret-down-fill"></i>
+          </p>
+          <ul class="course_ul">
+            <li><a href="./begPython.html">Beginner Python</a></li>
+            <li><a href="./test.html">test</a></li>
+            <li>DSA</li>
+          </ul>
+        </div>
+        <div class="bootcamp">
+          <p class="link bootcamp_link">
+            Bootcamp <i class="bi bi-caret-down-fill"></i>
+          </p>
+          <ul class="bootcamp_ul">
+            <li>7 Days Python Bootcamp</li>
+            <li>7 Days Java Bootcamp</li>
+          </ul>
+        </div>
+        <p class="link about_link">About</p>
+      </div>
+      <i class="bars fa-solid fa-bars"></i>
+    </header>
+    <div class="common">
+      <section class="banner">
+        <div class="box">
+          <h1 class="title">Beginner Python Course</h1>
+          <h4 class="sub_heading">
+            Python empowers creativity and innovation with its simple, readable
+            syntax and extensive libraries.
+          </h4>
+          <div class="tags">
+            <p class="icon_tags">
+              <i class="fa-regular fa-calendar-days"></i>4 Weeks, 1 hr/day
+              (flexible schedule)
+            </p>
+            <p class="icon_tags">
+              <i class="fa-solid fa-chalkboard-user"></i>Weekly Doubt Section
+            </p>
+          </div>
+        </div>
+        <div class="form_box">
+          <form action="https://formspree.io/f/xrgnwkwo" method="POST">
+            <div class="email_in">
+              <label for="email">Email Id</label>
+              <br />
+              <input
+                class="email"
+                name="email"
+                type="email"
+                placeholder="akash@example.com"
+                maxlength="64"
+                required
+              />
+            </div>
+            <div class="user_in">
+              <div>
+                <label for="f_name">First Name</label>
+                <br />
+                <input
+                  class="first_name"
+                  name="first_name"
+                  type="text"
+                  placeholder="Akash"
+                  maxlength="20"
+                  required
+                />
+              </div>
+              <div>
+                <label for="l_name"
+                  >Last Name <span class="optional">(Optional)</span></label
+                >
+                <br />
+                <input
+                  class="last_name"
+                  name="last_name"
+                  type="text"
+                  placeholder="Ram"
+                  maxlength="20"
+                />
+              </div>
+            </div>
+            <div class="mob_in">
+              <label for="mob_num">Mobile No</label>
+              <br />
+              <input
+                class="phone_no"
+                name="Phone_no"
+                type="text"
+                placeholder="7992038483"
+                maxlength="10"
+                required
+              />
+            </div>
+            <div class="wha_in">
+              <label for="whats_num">Whatsapp No</label>
+              <br />
+              <input
+                class="whatsapp_no"
+                name="whatsapp_no"
+                type="text"
+                placeholder="7992038483"
+                maxlength="10"
+                required
+              />
+            </div>
+            <div class="col_in">
+              <label for=""> College/Institute/University </label>
+              <br />
+              <input
+                class="col_name"
+                name="col_name"
+                type="text"
+                placeholder="V Tech"
+                maxlength="64"
+              />
+            </div>
+            <div class="year_in">
+              <label class="year" for="">Year</label>
+
+              <div class="year_num">
+                <input
+                  name="year"
+                  type="radio"
+                  id="1_year"
+                  name="fav_language"
+                  value="1"
+                />
+                <label for="">1</label>
+                <input
+                  name="year"
+                  type="radio"
+                  id="2_year"
+                  name="fav_language"
+                  value="2"
+                />
+                <label for="">2</label>
+                <input
+                  name="year"
+                  type="radio"
+                  id="3_year"
+                  name="fav_language"
+                  value="3"
+                />
+                <label for="">3</label>
+                <input
+                  name="year"
+                  type="radio"
+                  id="3_year"
+                  name="fav_language"
+                  value="4"
+                />
+                <label for="">4</label>
+                <input
+                  name="year"
+                  type="radio"
+                  id="5_year"
+                  name="fav_language"
+                  value="5"
+                />
+                <label for="">5</label>
+              </div>
+            </div>
+            <div class="bra_in">
+              <label for="branch">Branch</label>
+              <select class="branch" name="branch" id="branch_selector">
+                <option value="CSE">CSE</option>
+                <option value="IT">IT</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <div class="other_input" id="inputField">
+              <label for="otherInput">Other:</label>
+              <input
+                name="other_branch"
+                type="text"
+                id="otherInput"
+                maxlength="40"
+              />
+            </div>
+            <button class="enroll" type="submit">Enroll Now</button>
+          </form>
+        </div>
+      </section>
+      <section class="training-highlights">
+        <h4 class="t_h_course">Course Highlights</h4>
+        <div class="highlight_items">
+          <i class="fa-solid fa-play"  style="color: #0074cc;"></i></i>
+          <div>
+            <p class="h_i_title">Learn online</p>
+            <p class="h_i_dis">At your own schedule</p>
+          </div>
+        </div>
+        <div class="highlight_items">
+          <i class="fa-solid fa-mobile" style="color: #0074cc;"></i>
+          <div>
+            <p class="h_i_title">Mobile friendly</p>
+            <p class="h_i_dis">No laptop? No problem</p>
+          </div>
+        </div>
+        <div class="highlight_items">
+          <i class="fa-solid fa-certificate" style="color: #0074cc;"></i>
+          <div>
+            <p class="h_i_title">Certificate of Training</p>
+            <p class="h_i_dis">From Website Training</p>
+          </div>
+        </div>
+        <div class="highlight_items">
+          <i class="fa-solid fa-list-check" style="color: #0074cc;"></i>
+          <div>
+            <p class="h_i_title">5 Assignments & Projects</p>
+            <p class="h_i_dis">For hands-on practice</p>
+          </div>
+        </div>
+        <div class="highlight_items">
+          <i class="fa-solid fa-music" style="color: #0074cc;"></i>
+          <div>
+            <p class="h_i_title">Learn in English</p>
+            <p class="h_i_dis">As per the choice</p>
+          </div>
+        </div>
+        <div class="highlight_items">
+          <i class="fa-solid fa-message" style="color: #0074cc;"></i>
+          <div>
+            <p class="h_i_title">Doubt Clearing</p>
+            <p class="h_i_dis">Through Q&A Forum</p>
+          </div>
+        </div>
+        <div class="highlight_items">
+          <i class="fa-solid fa-stairs" style="color: #0074cc;"></i>
+          <div>
+            <p class="h_i_title">Beginner Friendly</p>
+            <p class="h_i_dis">No prior knowledge required</p>
+          </div>
+        </div>
+        <div class="highlight_items">
+          <i class="fa-regular fa-calendar-days" style="color: #0074cc;"></i>
+          <div>
+            <p class="h_i_title">4 weeks duration</p>
+            <p class="h_i_dis">1 hr/day</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="./srcipt.js"></script>
+  </body>
+</html>
