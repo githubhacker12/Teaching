@@ -5,7 +5,7 @@
 }
 
 header {
-    display: flex;
+  display: flex;
   justify-content: space-between;
   box-sizing: border-box;
   padding: 0rem 7rem;
@@ -18,13 +18,23 @@ header {
   background-color: white;
 }
 
+.logo {
+  text-align: center;
+  font-weight: 900;
+  font-size: 20px;
+}
+
 .links {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 3rem;
-  font-weight: 500;
+  font-weight: 400;
   font-size: large;
+}
+
+.link:hover {
+  font-weight: 600;
 }
 
 .link {
@@ -94,6 +104,9 @@ header {
     gap: 0px;
     width: 50vw;
     right: 0;
+    background-color: wheat;
+    height: 100vh;
+    padding-left: 2rem;
   }
 
   .course_ul,
