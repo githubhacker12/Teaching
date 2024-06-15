@@ -5,7 +5,6 @@
   top: 100px;
 }
 
-
 .banner {
   background-image: url("./images/Untitled\ design-3.jpg");
   display: flex;
@@ -14,7 +13,6 @@
   border-radius: 0.5rem;
   background-repeat: no-repeat;
   background-size: cover;
-
   margin: 0 5rem;
   width: auto;
 }
@@ -36,9 +34,7 @@
   margin: 1rem 0;
 }
 
-/* rough */
 
-/*  */
 .box {
   width: 600px;
   flex-grow: 0;
@@ -46,17 +42,6 @@
   padding-right: 1rem;
   margin-left: 1rem;
 }
-
-/* .title {
-  font-size: 40px;
-  color: white;
-} */
-
-/* .sub_heading {
-  color: white;
-  line-height: 1.5rem;
-  padding: 1rem 0;
-} */
 
 .tags {
   display: flex;
@@ -90,7 +75,6 @@ form {
   background-color: white;
   border-radius: 0.7rem;
   padding: 1.5rem;
-  /* border: 5px solid #378ce7; */
   box-shadow: -5px -5px 10px #378ce7, 5px 5px 10px #378ce7;
 }
 
@@ -547,4 +531,3 @@ label {
     gap: 0.5rem;
   }
 }
-
