@@ -36,11 +36,22 @@ xmarkEl.addEventListener("click", () => {
   barsEl.style.display = "block";
 });
 
-document.querySelector(".branch").addEventListener("change", () => {
-  document.querySelector(".other_input").style.display =
-    document.querySelector("#branch_selector").value === "Other"
-      ? "flex"
-      : "none";
+// Topics(Q/A)
+const syl_qElements = document.querySelectorAll(".syl_q");
+
+syl_qElements.forEach((element, index) => {
+  element.addEventListener("click", () => {
+    let ele = element.className.slice(10, 11);
+    let answerElement = document.querySelector(`.syl_${ele}_a`);
+
+    let answerIElement = document.querySelector(`.syl_${ele}_q i`);
+    answerElement.style.display =
+      answerElement.style.display === "" ? "flex" : "";
+
+    answerIElement.className === "fa-solid fa-plus"
+      ? (answerIElement.className = "fa-solid fa-minus")
+      : (answerIElement.className = "fa-solid fa-plus");
+  });
 });
 
 // Function to get the current aspect ratio
@@ -58,3 +69,24 @@ window.addEventListener("resize", () => {
     window.location.reload();
   }
 });
+
+document.querySelector(".branch").addEventListener("change", () => {
+  document.querySelector(".other_input").style.display =
+    document.querySelector("#branch_selector").value === "Other"
+      ? "flex"
+      : "none";
+});
+
+// window scrool
+window.addEventListener("scroll", function () {
+  var currentX = window.scrollX;
+  var currentY = window.scrollY;
+  console.log("Current scroll position - X: " + currentX + ", Y: " + currentY);
+  if (currentY > 30) {
+    document.querySelector("header").style.boxShadow =
+      "0px 5px 5px rgb(186, 220, 239)";
+  } else {
+    document.querySelector("header").style.boxShadow = "";
+  }
+});
+
